@@ -1,0 +1,33 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top navigation styles */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
